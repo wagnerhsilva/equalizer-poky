@@ -1,0 +1,116 @@
+{
+  "name": "mongoose",
+  "version": "4.9.2",
+  "dependencies": {
+    "async": {
+      "version": "2.1.4",
+      "dependencies": {
+        "lodash": {
+          "version": "4.17.4"
+        }
+      }
+    },
+    "bson": {
+      "version": "1.0.4"
+    },
+    "hooks-fixed": {
+      "version": "2.0.0"
+    },
+    "kareem": {
+      "version": "1.2.1"
+    },
+    "mongodb": {
+      "version": "2.2.25",
+      "dependencies": {
+        "es6-promise": {
+          "version": "3.2.1"
+        },
+        "mongodb-core": {
+          "version": "2.1.9",
+          "dependencies": {
+            "bson": {
+              "version": "1.0.4"
+            },
+            "require_optional": {
+              "version": "1.0.0",
+              "dependencies": {
+                "semver": {
+                  "version": "5.3.0"
+                },
+                "resolve-from": {
+                  "version": "2.0.0"
+                }
+              }
+            }
+          }
+        },
+        "readable-stream": {
+          "version": "2.1.5",
+          "dependencies": {
+            "buffer-shims": {
+              "version": "1.0.0"
+            },
+            "core-util-is": {
+              "version": "1.0.2"
+            },
+            "inherits": {
+              "version": "2.0.3"
+            },
+            "isarray": {
+              "version": "1.0.0"
+            },
+            "process-nextick-args": {
+              "version": "1.0.7"
+            },
+            "string_decoder": {
+              "version": "0.10.31"
+            },
+            "util-deprecate": {
+              "version": "1.0.2"
+            }
+          }
+        }
+      }
+    },
+    "mpath": {
+      "version": "0.2.1"
+    },
+    "mpromise": {
+      "version": "0.5.5"
+    },
+    "mquery": {
+      "version": "2.3.0",
+      "dependencies": {
+        "bluebird": {
+          "version": "2.10.2"
+        },
+        "debug": {
+          "version": "2.2.0",
+          "dependencies": {
+            "ms": {
+              "version": "0.7.1"
+            }
+          }
+        },
+        "regexp-clone": {
+          "version": "0.0.1"
+        },
+        "sliced": {
+          "version": "0.0.5"
+        }
+      }
+    },
+    "ms": {
+      "version": "0.7.2"
+    },
+    "muri": {
+      "version": "1.2.1"
+    },
+    "regexp-clone": {
+      "version": "0.0.1"
+    },
+    "sliced": {
+      "version": "1.0.1"
+    }
+  }
+}

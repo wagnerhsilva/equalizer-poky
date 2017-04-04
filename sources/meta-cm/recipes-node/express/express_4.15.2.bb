@@ -1,0 +1,202 @@
+# Recipe created by recipetool
+# This is the basis of a recipe and may need further editing in order to be fully functional.
+# (Feel free to remove these comments when editing.)
+#
+# WARNING: the following LICENSE and LIC_FILES_CHKSUM values are best guesses - it is
+# your responsibility to verify that the values are complete and correct.
+#
+# NOTE: multiple licenses have been detected; if that is correct you should separate
+# these in the LICENSE value using & if the multiple licenses all apply, or | if there
+# is a choice between the multiple licenses. If in doubt, check the accompanying
+# documentation to determine which situation is applicable.
+LICENSE = "ISC & BSD-3-Clause & MIT"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=5513c00a5c36cd361da863dd9aa8875d \
+                    file://node_modules/depd/LICENSE;md5=89378960d0c54c30539e50c7a78ce846 \
+                    file://node_modules/utils-merge/LICENSE;md5=f405e8bc5b8dd65fdb11cf3669fc209b \
+                    file://node_modules/parseurl/LICENSE;md5=f2a528765fa86a33fb7f85f3d9a1b5dd \
+                    file://node_modules/vary/LICENSE;md5=13babc4f212ce635d68da544339c962b \
+                    file://node_modules/escape-html/LICENSE;md5=f8746101546eeb9e4f6de64bb8bdf595 \
+                    file://node_modules/array-flatten/LICENSE;md5=44088ba57cb871a58add36ce51b8de08 \
+                    file://node_modules/merge-descriptors/LICENSE;md5=aaf57ba8c5c9bf256fea7e943991a81a \
+                    file://node_modules/path-to-regexp/LICENSE;md5=44088ba57cb871a58add36ce51b8de08 \
+                    file://node_modules/etag/LICENSE;md5=6e8686b7b13dd7ac8733645a81842c4a \
+                    file://node_modules/content-type/LICENSE;md5=f4b767f006864f81a4901347fe4efdab \
+                    file://node_modules/finalhandler/LICENSE;md5=b506956e5cbfbe0d04f8a5c40107ec89 \
+                    file://node_modules/finalhandler/node_modules/parseurl/LICENSE;md5=f2a528765fa86a33fb7f85f3d9a1b5dd \
+                    file://node_modules/finalhandler/node_modules/escape-html/LICENSE;md5=f8746101546eeb9e4f6de64bb8bdf595 \
+                    file://node_modules/finalhandler/node_modules/encodeurl/LICENSE;md5=272621efa0ff4f18a73221e49ab60654 \
+                    file://node_modules/finalhandler/node_modules/debug/LICENSE;md5=ddd815a475e7338b0be7a14d8ee35a99 \
+                    file://node_modules/finalhandler/node_modules/debug/node_modules/ms/LICENSE.md;md5=fd56fd5f1860961dfa92d313167c37a6 \
+                    file://node_modules/finalhandler/node_modules/unpipe/LICENSE;md5=934ab86a8ab081ea0326add08d550739 \
+                    file://node_modules/finalhandler/node_modules/statuses/LICENSE;md5=607209623abfcc77b9098f71a0ef52f9 \
+                    file://node_modules/finalhandler/node_modules/on-finished/LICENSE;md5=1b1f7f9cec194121fdf616b971df7a7b \
+                    file://node_modules/finalhandler/node_modules/on-finished/node_modules/ee-first/LICENSE;md5=c8d3a30332ecb31cfaf4c0a06da18f5c \
+                    file://node_modules/encodeurl/LICENSE;md5=272621efa0ff4f18a73221e49ab60654 \
+                    file://node_modules/debug/LICENSE;md5=ddd815a475e7338b0be7a14d8ee35a99 \
+                    file://node_modules/debug/node_modules/ms/LICENSE.md;md5=fd56fd5f1860961dfa92d313167c37a6 \
+                    file://node_modules/qs/LICENSE;md5=d5c7c6dc45a33a0a9620ed81315672d7 \
+                    file://node_modules/serve-static/LICENSE;md5=27b1707520b14d0bc890f4e75cd387b0 \
+                    file://node_modules/serve-static/node_modules/parseurl/LICENSE;md5=f2a528765fa86a33fb7f85f3d9a1b5dd \
+                    file://node_modules/serve-static/node_modules/escape-html/LICENSE;md5=f8746101546eeb9e4f6de64bb8bdf595 \
+                    file://node_modules/serve-static/node_modules/encodeurl/LICENSE;md5=272621efa0ff4f18a73221e49ab60654 \
+                    file://node_modules/serve-static/node_modules/send/LICENSE;md5=df2b0938eba0709b77ac937e2d552b7a \
+                    file://node_modules/serve-static/node_modules/send/node_modules/depd/LICENSE;md5=89378960d0c54c30539e50c7a78ce846 \
+                    file://node_modules/serve-static/node_modules/send/node_modules/http-errors/LICENSE;md5=607209623abfcc77b9098f71a0ef52f9 \
+                    file://node_modules/serve-static/node_modules/send/node_modules/http-errors/node_modules/depd/LICENSE;md5=89378960d0c54c30539e50c7a78ce846 \
+                    file://node_modules/serve-static/node_modules/send/node_modules/http-errors/node_modules/inherits/LICENSE;md5=5b2ef2247af6d355ae9d9f988092d470 \
+                    file://node_modules/serve-static/node_modules/send/node_modules/http-errors/node_modules/statuses/LICENSE;md5=607209623abfcc77b9098f71a0ef52f9 \
+                    file://node_modules/serve-static/node_modules/send/node_modules/http-errors/node_modules/setprototypeof/LICENSE;md5=4846f1626304c2c0f806a539bbc7d54a \
+                    file://node_modules/serve-static/node_modules/send/node_modules/escape-html/LICENSE;md5=f8746101546eeb9e4f6de64bb8bdf595 \
+                    file://node_modules/serve-static/node_modules/send/node_modules/mime/LICENSE;md5=8eab89930e0b484cd991ed4a155f74f7 \
+                    file://node_modules/serve-static/node_modules/send/node_modules/etag/LICENSE;md5=6e8686b7b13dd7ac8733645a81842c4a \
+                    file://node_modules/serve-static/node_modules/send/node_modules/encodeurl/LICENSE;md5=272621efa0ff4f18a73221e49ab60654 \
+                    file://node_modules/serve-static/node_modules/send/node_modules/debug/LICENSE;md5=ddd815a475e7338b0be7a14d8ee35a99 \
+                    file://node_modules/serve-static/node_modules/send/node_modules/debug/node_modules/ms/LICENSE.md;md5=fd56fd5f1860961dfa92d313167c37a6 \
+                    file://node_modules/serve-static/node_modules/send/node_modules/ms/LICENSE.md;md5=fd56fd5f1860961dfa92d313167c37a6 \
+                    file://node_modules/serve-static/node_modules/send/node_modules/range-parser/LICENSE;md5=d4246fb961a4f121eef5ffca47f0b010 \
+                    file://node_modules/serve-static/node_modules/send/node_modules/fresh/LICENSE;md5=373c2cf0978b37e434394a43b4cbbdb4 \
+                    file://node_modules/serve-static/node_modules/send/node_modules/statuses/LICENSE;md5=607209623abfcc77b9098f71a0ef52f9 \
+                    file://node_modules/serve-static/node_modules/send/node_modules/on-finished/LICENSE;md5=1b1f7f9cec194121fdf616b971df7a7b \
+                    file://node_modules/serve-static/node_modules/send/node_modules/on-finished/node_modules/ee-first/LICENSE;md5=c8d3a30332ecb31cfaf4c0a06da18f5c \
+                    file://node_modules/serve-static/node_modules/send/node_modules/destroy/LICENSE;md5=c8d3a30332ecb31cfaf4c0a06da18f5c \
+                    file://node_modules/range-parser/LICENSE;md5=d4246fb961a4f121eef5ffca47f0b010 \
+                    file://node_modules/send/LICENSE;md5=df2b0938eba0709b77ac937e2d552b7a \
+                    file://node_modules/send/node_modules/depd/LICENSE;md5=89378960d0c54c30539e50c7a78ce846 \
+                    file://node_modules/send/node_modules/http-errors/LICENSE;md5=607209623abfcc77b9098f71a0ef52f9 \
+                    file://node_modules/send/node_modules/http-errors/node_modules/depd/LICENSE;md5=89378960d0c54c30539e50c7a78ce846 \
+                    file://node_modules/send/node_modules/http-errors/node_modules/inherits/LICENSE;md5=5b2ef2247af6d355ae9d9f988092d470 \
+                    file://node_modules/send/node_modules/http-errors/node_modules/statuses/LICENSE;md5=607209623abfcc77b9098f71a0ef52f9 \
+                    file://node_modules/send/node_modules/http-errors/node_modules/setprototypeof/LICENSE;md5=4846f1626304c2c0f806a539bbc7d54a \
+                    file://node_modules/send/node_modules/escape-html/LICENSE;md5=f8746101546eeb9e4f6de64bb8bdf595 \
+                    file://node_modules/send/node_modules/mime/LICENSE;md5=8eab89930e0b484cd991ed4a155f74f7 \
+                    file://node_modules/send/node_modules/etag/LICENSE;md5=6e8686b7b13dd7ac8733645a81842c4a \
+                    file://node_modules/send/node_modules/encodeurl/LICENSE;md5=272621efa0ff4f18a73221e49ab60654 \
+                    file://node_modules/send/node_modules/debug/LICENSE;md5=ddd815a475e7338b0be7a14d8ee35a99 \
+                    file://node_modules/send/node_modules/debug/node_modules/ms/LICENSE.md;md5=fd56fd5f1860961dfa92d313167c37a6 \
+                    file://node_modules/send/node_modules/ms/LICENSE.md;md5=fd56fd5f1860961dfa92d313167c37a6 \
+                    file://node_modules/send/node_modules/range-parser/LICENSE;md5=d4246fb961a4f121eef5ffca47f0b010 \
+                    file://node_modules/send/node_modules/fresh/LICENSE;md5=373c2cf0978b37e434394a43b4cbbdb4 \
+                    file://node_modules/send/node_modules/statuses/LICENSE;md5=607209623abfcc77b9098f71a0ef52f9 \
+                    file://node_modules/send/node_modules/on-finished/LICENSE;md5=1b1f7f9cec194121fdf616b971df7a7b \
+                    file://node_modules/send/node_modules/on-finished/node_modules/ee-first/LICENSE;md5=c8d3a30332ecb31cfaf4c0a06da18f5c \
+                    file://node_modules/send/node_modules/destroy/LICENSE;md5=c8d3a30332ecb31cfaf4c0a06da18f5c \
+                    file://node_modules/proxy-addr/LICENSE;md5=6e8686b7b13dd7ac8733645a81842c4a \
+                    file://node_modules/proxy-addr/node_modules/ipaddr.js/LICENSE;md5=d9eb6ccfeb0da178937d5a70394647d3 \
+                    file://node_modules/proxy-addr/node_modules/forwarded/LICENSE;md5=c6e0ce1e688c5ff16db06b7259e9cd20 \
+                    file://node_modules/content-disposition/LICENSE;md5=c6e0ce1e688c5ff16db06b7259e9cd20 \
+                    file://node_modules/fresh/LICENSE;md5=373c2cf0978b37e434394a43b4cbbdb4 \
+                    file://node_modules/cookie/LICENSE;md5=bc85b43b6f963e8ab3f88e63628448ca \
+                    file://node_modules/statuses/LICENSE;md5=607209623abfcc77b9098f71a0ef52f9 \
+                    file://node_modules/methods/LICENSE;md5=c16a7dd9f946172f07086576d135d9d3 \
+                    file://node_modules/on-finished/LICENSE;md5=1b1f7f9cec194121fdf616b971df7a7b \
+                    file://node_modules/on-finished/node_modules/ee-first/LICENSE;md5=c8d3a30332ecb31cfaf4c0a06da18f5c \
+                    file://node_modules/setprototypeof/LICENSE;md5=4846f1626304c2c0f806a539bbc7d54a \
+                    file://node_modules/type-is/LICENSE;md5=0afd201e48c7d095454eed4ac1184e40 \
+                    file://node_modules/type-is/node_modules/mime-types/LICENSE;md5=bf1f9ad1e2e1d507aef4883fff7103de \
+                    file://node_modules/type-is/node_modules/mime-types/node_modules/mime-db/LICENSE;md5=c8d3a30332ecb31cfaf4c0a06da18f5c \
+                    file://node_modules/type-is/node_modules/media-typer/LICENSE;md5=c6e0ce1e688c5ff16db06b7259e9cd20 \
+                    file://node_modules/accepts/LICENSE;md5=bf1f9ad1e2e1d507aef4883fff7103de \
+                    file://node_modules/accepts/node_modules/negotiator/LICENSE;md5=6417a862a5e35c17c904d9dda2cbd499 \
+                    file://node_modules/accepts/node_modules/mime-types/LICENSE;md5=bf1f9ad1e2e1d507aef4883fff7103de \
+                    file://node_modules/accepts/node_modules/mime-types/node_modules/mime-db/LICENSE;md5=c8d3a30332ecb31cfaf4c0a06da18f5c"
+
+SRC_URI = "npm://registry.npmjs.org;name=express;version=${PV}"
+
+S = "${WORKDIR}/npmpkg"
+
+SUMMARY = "Fast, unopinionated, minimalist web framework"
+HOMEPAGE = "http://expressjs.com/"
+NPM_SHRINKWRAP := "${THISDIR}/${PN}/npm-shrinkwrap.json"
+
+inherit npm
+
+LICENSE_${PN}-accepts-mime-types-mime-db = "MIT"
+LICENSE_${PN}-accepts-mime-types = "MIT"
+LICENSE_${PN}-accepts-negotiator = "MIT"
+LICENSE_${PN}-accepts = "MIT"
+LICENSE_${PN}-array-flatten = "MIT"
+LICENSE_${PN}-content-disposition = "MIT"
+LICENSE_${PN}-content-type = "MIT"
+LICENSE_${PN}-cookie-signature = "MIT"
+LICENSE_${PN}-cookie = "MIT"
+LICENSE_${PN}-debug-ms = "MIT"
+LICENSE_${PN}-debug = "MIT"
+LICENSE_${PN}-depd = "MIT"
+LICENSE_${PN}-encodeurl = "MIT"
+LICENSE_${PN}-escape-html = "MIT"
+LICENSE_${PN}-etag = "MIT"
+LICENSE_${PN}-finalhandler-debug-ms = "MIT"
+LICENSE_${PN}-finalhandler-debug = "MIT"
+LICENSE_${PN}-finalhandler-encodeurl = "MIT"
+LICENSE_${PN}-finalhandler-escape-html = "MIT"
+LICENSE_${PN}-finalhandler-on-finished-ee-first = "MIT"
+LICENSE_${PN}-finalhandler-on-finished = "MIT"
+LICENSE_${PN}-finalhandler-parseurl = "MIT"
+LICENSE_${PN}-finalhandler-statuses = "MIT"
+LICENSE_${PN}-finalhandler-unpipe = "MIT"
+LICENSE_${PN}-finalhandler = "MIT"
+LICENSE_${PN}-fresh = "MIT"
+LICENSE_${PN}-merge-descriptors = "MIT"
+LICENSE_${PN}-methods = "MIT"
+LICENSE_${PN}-on-finished-ee-first = "MIT"
+LICENSE_${PN}-on-finished = "MIT"
+LICENSE_${PN}-parseurl = "MIT"
+LICENSE_${PN}-path-to-regexp = "MIT"
+LICENSE_${PN}-proxy-addr-forwarded = "MIT"
+LICENSE_${PN}-proxy-addr-ipaddr.js = "MIT"
+LICENSE_${PN}-proxy-addr = "MIT"
+LICENSE_${PN}-qs = "BSD-3-Clause"
+LICENSE_${PN}-range-parser = "MIT"
+LICENSE_${PN}-send-debug-ms = "MIT"
+LICENSE_${PN}-send-debug = "MIT"
+LICENSE_${PN}-send-depd = "MIT"
+LICENSE_${PN}-send-destroy = "MIT"
+LICENSE_${PN}-send-encodeurl = "MIT"
+LICENSE_${PN}-send-escape-html = "MIT"
+LICENSE_${PN}-send-etag = "MIT"
+LICENSE_${PN}-send-fresh = "MIT"
+LICENSE_${PN}-send-http-errors-depd = "MIT"
+LICENSE_${PN}-send-http-errors-inherits = "ISC"
+LICENSE_${PN}-send-http-errors-setprototypeof = "ISC"
+LICENSE_${PN}-send-http-errors-statuses = "MIT"
+LICENSE_${PN}-send-http-errors = "MIT"
+LICENSE_${PN}-send-mime = "MIT"
+LICENSE_${PN}-send-ms = "MIT"
+LICENSE_${PN}-send-on-finished-ee-first = "MIT"
+LICENSE_${PN}-send-on-finished = "MIT"
+LICENSE_${PN}-send-range-parser = "MIT"
+LICENSE_${PN}-send-statuses = "MIT"
+LICENSE_${PN}-send = "MIT"
+LICENSE_${PN}-serve-static-encodeurl = "MIT"
+LICENSE_${PN}-serve-static-escape-html = "MIT"
+LICENSE_${PN}-serve-static-parseurl = "MIT"
+LICENSE_${PN}-serve-static-send-debug-ms = "MIT"
+LICENSE_${PN}-serve-static-send-debug = "MIT"
+LICENSE_${PN}-serve-static-send-depd = "MIT"
+LICENSE_${PN}-serve-static-send-destroy = "MIT"
+LICENSE_${PN}-serve-static-send-encodeurl = "MIT"
+LICENSE_${PN}-serve-static-send-escape-html = "MIT"
+LICENSE_${PN}-serve-static-send-etag = "MIT"
+LICENSE_${PN}-serve-static-send-fresh = "MIT"
+LICENSE_${PN}-serve-static-send-http-errors-depd = "MIT"
+LICENSE_${PN}-serve-static-send-http-errors-inherits = "ISC"
+LICENSE_${PN}-serve-static-send-http-errors-setprototypeof = "ISC"
+LICENSE_${PN}-serve-static-send-http-errors-statuses = "MIT"
+LICENSE_${PN}-serve-static-send-http-errors = "MIT"
+LICENSE_${PN}-serve-static-send-mime = "MIT"
+LICENSE_${PN}-serve-static-send-ms = "MIT"
+LICENSE_${PN}-serve-static-send-on-finished-ee-first = "MIT"
+LICENSE_${PN}-serve-static-send-on-finished = "MIT"
+LICENSE_${PN}-serve-static-send-range-parser = "MIT"
+LICENSE_${PN}-serve-static-send-statuses = "MIT"
+LICENSE_${PN}-serve-static-send = "MIT"
+LICENSE_${PN}-serve-static = "MIT"
+LICENSE_${PN}-setprototypeof = "ISC"
+LICENSE_${PN}-statuses = "MIT"
+LICENSE_${PN}-type-is-media-typer = "MIT"
+LICENSE_${PN}-type-is-mime-types-mime-db = "MIT"
+LICENSE_${PN}-type-is-mime-types = "MIT"
+LICENSE_${PN}-type-is = "MIT"
+LICENSE_${PN}-utils-merge = "MIT"
+LICENSE_${PN}-vary = "MIT"
+LICENSE_${PN} = "MIT"
