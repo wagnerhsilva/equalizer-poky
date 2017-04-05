@@ -1,4 +1,4 @@
-DESCRIPTION = "Packagegroup para o equalizer CM Módulos Lineares"
+DESCRIPTION = "Packagegroup para o equalizer CM Comandos Lineares"
 LICENSE = "MIT"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
@@ -41,7 +41,7 @@ UTIL_PACKAGES="\
 
 EQUALIZER_PACKAGES="\
     nginx \
-    mysql5 \
+    sqlite3 \
     nodejs \
     nodejs-npm \
     express \
@@ -61,6 +61,7 @@ EQUALIZER_PACKAGES="\
     connect-flash \
     dateformat \
 "
+#Adicionar sqlite3-node após compilar
 
 RDEPENDS_packagegroup-cm-equalizer = "\
     ${CONNMAN_PACKAGES} \
