@@ -45,7 +45,6 @@ EQUALIZER_PACKAGES="\
     nodejs \
     nodejs-npm \
     express \
-    mongoose \
     body-parser \
     cookie-parser \
     debug \
@@ -60,6 +59,7 @@ EQUALIZER_PACKAGES="\
     serve-favicon \
     connect-flash \
     dateformat \
+    equalizer-api \
 "
 #Adicionar sqlite3-node após compilar
 
