@@ -1,0 +1,7 @@
+#!/bin/bash
+#Prepara repositório openembedded de nodejs
+cd sources/
+git clone https://github.com/imyller/meta-nodejs.git
+#Remove receita mais nova (aparentemente quebrada), para o 6.10.0 ser utilizado
+rm meta-nodejs/recipes-devtools/nodejs/nodejs_7.7.3.bb
+cd -
