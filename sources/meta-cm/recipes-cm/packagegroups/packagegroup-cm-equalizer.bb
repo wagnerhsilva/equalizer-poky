@@ -60,8 +60,9 @@ EQUALIZER_PACKAGES="\
     connect-flash \
     dateformat \
     equalizer-api \
+    gnuplot \
+    sqlite3-node \
 "
-#Adicionar sqlite3-node após compilar
 
 RDEPENDS_packagegroup-cm-equalizer = "\
     ${CONNMAN_PACKAGES} \
