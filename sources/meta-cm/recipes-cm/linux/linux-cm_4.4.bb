@@ -11,7 +11,7 @@ include linux-cm.inc
 
 PV = "4.4"
 
-SRCBRANCH = "mt721"
-SRCREV = "03318592ebc9433bbe9354abb98f137c65b562b3"
+SRCBRANCH = "master"
+SRCREV = "master"
 
 COMPATIBLE_MACHINE = "${MACHINE}"

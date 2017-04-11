@@ -6,6 +6,6 @@ require recipes-kernel/linux/linux-dtb.inc
 
 DEPENDS += "lzop-native bc-native"
 
-SRC_URI = "git://git@git.phiinnovations.com/gertec/linux-gertec.git;protocol=ssh;branch=${SRCBRANCH} \
+SRC_URI = "git://git@git.phiinnovations.com/cm_comandos_lineares/linux-cm.git;protocol=ssh;branch=${SRCBRANCH} \
            file://defconfig"
 LOCALVERSION = "-cm"
