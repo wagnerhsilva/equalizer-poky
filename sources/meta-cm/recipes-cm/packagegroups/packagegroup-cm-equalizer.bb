@@ -62,6 +62,9 @@ EQUALIZER_PACKAGES="\
     equalizer-api \
     gnuplot \
     sqlite3-node \
+    ip \
+    getmac \
+    network \
 "
 
 RDEPENDS_packagegroup-cm-equalizer = "\
