@@ -65,6 +65,10 @@ EQUALIZER_PACKAGES="\
     ip \
     getmac \
     network \
+    nodemailer \
+    ntp-client \
+    setup \
+    sntp \
 "
 
 RDEPENDS_packagegroup-cm-equalizer = "\
