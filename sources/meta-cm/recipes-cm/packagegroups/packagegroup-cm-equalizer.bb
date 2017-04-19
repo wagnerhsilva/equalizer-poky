@@ -69,6 +69,7 @@ EQUALIZER_PACKAGES="\
     ntp-client \
     setup \
     sntp \
+    equalizer-serial-service \
 "
 
 RDEPENDS_packagegroup-cm-equalizer = "\
