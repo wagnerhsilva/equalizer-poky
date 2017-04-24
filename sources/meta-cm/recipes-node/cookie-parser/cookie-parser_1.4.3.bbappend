@@ -1,6 +1,6 @@
 inherit externalsrc
-EXTERNALSRC = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/cookie-parser"
-EXTERNALSRC_BUILD = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/cookie-parser"
+EXTERNALSRC = "${THISDIR}/cookie-parser"
+EXTERNALSRC_BUILD = "${THISDIR}/cookie-parser"
 
 # initial_rev: d746da5154670fff32f64deb916eaecc32e07ec1
 do_install_append() {

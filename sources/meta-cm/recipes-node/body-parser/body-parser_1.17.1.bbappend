@@ -1,6 +1,6 @@
 inherit externalsrc
-EXTERNALSRC = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/body-parser"
-EXTERNALSRC_BUILD = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/body-parser"
+EXTERNALSRC = "${THISDIR}/body-parser"
+EXTERNALSRC_BUILD = "${THISDIR}/body-parser"
 
 # initial_rev: dcd521688abb8471294903866544e1b90a86ec9d
 do_install_append() {

@@ -1,6 +1,6 @@
 inherit externalsrc
-EXTERNALSRC = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/bcrypt-nodejs"
-EXTERNALSRC_BUILD = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/bcrypt-nodejs"
+EXTERNALSRC = "${THISDIR}/bcrypt-nodejs"
+EXTERNALSRC_BUILD = "${THISDIR}/bcrypt-nodejs"
 
 # initial_rev: 96ec3608af088c443ddcdef20c5f6bc5f6152366
 do_install_append() {

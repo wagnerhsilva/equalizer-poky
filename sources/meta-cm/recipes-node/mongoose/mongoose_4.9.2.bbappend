@@ -1,6 +1,6 @@
 inherit externalsrc
-EXTERNALSRC = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/mongoose"
-EXTERNALSRC_BUILD = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/mongoose"
+EXTERNALSRC = "${THISDIR}/mongoose"
+EXTERNALSRC_BUILD = "${THISDIR}/mongoose"
 
 # initial_rev: 7e680e16db8933ec863fb768116feef2581cf027
 do_install_append() {

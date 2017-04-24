@@ -1,6 +1,6 @@
 inherit externalsrc
-EXTERNALSRC = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/express-session"
-EXTERNALSRC_BUILD = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/express-session"
+EXTERNALSRC = "${THISDIR}/express-session"
+EXTERNALSRC_BUILD = "${THISDIR}/express-session"
 
 # initial_rev: 6c3ca290c025e0772a89036827b98ea2245f6546
 do_install_append() {

@@ -1,6 +1,6 @@
 inherit externalsrc
-EXTERNALSRC = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/sntp"
-EXTERNALSRC_BUILD = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/sntp"
+EXTERNALSRC = "${THISDIR}/sntp"
+EXTERNALSRC_BUILD = "${THISDIR}/sntp"
 
 # initial_rev: ae9e63075363cc55cdc831846d1634f1c753493c
 do_install_append() {

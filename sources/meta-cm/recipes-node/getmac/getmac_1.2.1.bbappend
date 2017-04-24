@@ -1,6 +1,6 @@
 inherit externalsrc
-EXTERNALSRC = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/getmac"
-EXTERNALSRC_BUILD = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/getmac"
+EXTERNALSRC = "${THISDIR}/getmac"
+EXTERNALSRC_BUILD = "${THISDIR}/getmac"
 
 # initial_rev: d26d29ade36662d13af3582860090d4fd4ab6260
 do_install_append() {

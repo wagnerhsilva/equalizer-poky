@@ -1,6 +1,6 @@
 inherit externalsrc
-EXTERNALSRC = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/connect-flash"
-EXTERNALSRC_BUILD = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/connect-flash"
+EXTERNALSRC = "${THISDIR}/connect-flash"
+EXTERNALSRC_BUILD = "${THISDIR}/connect-flash"
 
 # initial_rev: e8bd251e3ac509c3838e8571787a4476aa2146be
 do_install_append() {

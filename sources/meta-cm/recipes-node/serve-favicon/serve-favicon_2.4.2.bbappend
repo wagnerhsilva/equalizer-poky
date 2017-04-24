@@ -1,6 +1,6 @@
 inherit externalsrc
-EXTERNALSRC = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/serve-favicon"
-EXTERNALSRC_BUILD = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/serve-favicon"
+EXTERNALSRC = "${THISDIR}/serve-favicon"
+EXTERNALSRC_BUILD = "${THISDIR}/serve-favicon"
 
 # initial_rev: a26da26b9adecaa7f28f19039a31406fa1bfeaee
 do_install_append() {

@@ -1,0 +1,18 @@
+#!/bin/bash
+#Prepara repositórios básicos e build
+repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth
+repo sync
+
+#Prepara repositório openembedded de nodejs
+cd sources/
+git clone https://github.com/imyller/meta-nodejs.git
+
+#Remove receita mais nova (aparentemente quebrada), para o 6.10.0 ser utilizado
+rm meta-nodejs/recipes-devtools/nodejs/nodejs_7.7.3.bb
+cd -
+
+#Cria ambiente de build
+MACHINE=equalizer DISTRO=cm-equalizer source setup-environment build
+
+#Copia arquivos de configuração, já vai estar no diretório de build
+cp ../conf/* conf/

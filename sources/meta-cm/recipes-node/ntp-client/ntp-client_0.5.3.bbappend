@@ -1,6 +1,6 @@
 inherit externalsrc
-EXTERNALSRC = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/ntp-client"
-EXTERNALSRC_BUILD = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/ntp-client"
+EXTERNALSRC = "${THISDIR}/ntp-client"
+EXTERNALSRC_BUILD = "${THISDIR}/ntp-client"
 
 # initial_rev: 8269e0487668b7b66432bcc3ce7fe1087b0818cb
 do_install_append() {

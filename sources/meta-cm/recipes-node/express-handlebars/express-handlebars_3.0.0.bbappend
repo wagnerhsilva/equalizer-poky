@@ -1,6 +1,6 @@
 inherit externalsrc
-EXTERNALSRC = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/express-handlebars"
-EXTERNALSRC_BUILD = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/express-handlebars"
+EXTERNALSRC = "${THISDIR}/express-handlebars"
+EXTERNALSRC_BUILD = "${THISDIR}/express-handlebars"
 
 # initial_rev: 23977ad8d532cc24649b6155da023c492d3c7dd0
 do_install_append() {

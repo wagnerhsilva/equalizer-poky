@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/prjs/cm_comandos_lineares/equalizer-poky/build/tmp-glibc/sysroots/x86_64-linux/usr/bin/node',
+1 verbose cli   '/home/prjs/cm_comandos_lineares/equalizer-poky/build/tmp-glibc/sysroots/x86_64-linux/usr/bin/npm',
+1 verbose cli   '--arch=arm',
+1 verbose cli   '--production',
+1 verbose cli   '--no-registry',
+1 verbose cli   'install' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData async
+20 silly mapToRegistry name async
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry null
+23 verbose stack AssertionError: registry URL is required
+23 verbose stack     at Conf.getCredentialsByURI (/home/prjs/cm_comandos_lineares/equalizer-poky/build/tmp-glibc/sysroots/x86_64-linux/usr/lib/node_modules/npm/lib/config/get-credentials-by-uri.js:8:3)
+23 verbose stack     at mapToRegistry (/home/prjs/cm_comandos_lineares/equalizer-poky/build/tmp-glibc/sysroots/x86_64-linux/usr/lib/node_modules/npm/lib/utils/map-to-registry.js:48:21)
+23 verbose stack     at fetchNamedPackageData (/home/prjs/cm_comandos_lineares/equalizer-poky/build/tmp-glibc/sysroots/x86_64-linux/usr/lib/node_modules/npm/lib/fetch-package-metadata.js:110:3)
+23 verbose stack     at fetchPackageMetadata (/home/prjs/cm_comandos_lineares/equalizer-poky/build/tmp-glibc/sysroots/x86_64-linux/usr/lib/node_modules/npm/lib/fetch-package-metadata.js:59:5)
+23 verbose stack     at /home/prjs/cm_comandos_lineares/equalizer-poky/build/tmp-glibc/sysroots/x86_64-linux/usr/lib/node_modules/npm/lib/install/deps.js:453:7
+23 verbose stack     at /home/prjs/cm_comandos_lineares/equalizer-poky/build/tmp-glibc/sysroots/x86_64-linux/usr/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+23 verbose stack     at /home/prjs/cm_comandos_lineares/equalizer-poky/build/tmp-glibc/sysroots/x86_64-linux/usr/lib/node_modules/npm/lib/install/deps.js:101:7
+23 verbose stack     at RawTask.call (/home/prjs/cm_comandos_lineares/equalizer-poky/build/tmp-glibc/sysroots/x86_64-linux/usr/lib/node_modules/npm/node_modules/asap/asap.js:40:19)
+23 verbose stack     at flush (/home/prjs/cm_comandos_lineares/equalizer-poky/build/tmp-glibc/sysroots/x86_64-linux/usr/lib/node_modules/npm/node_modules/asap/raw.js:50:29)
+23 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:67:7)
+24 verbose cwd /home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/network
+25 error Linux 4.4.0-72-generic
+26 error argv "/home/prjs/cm_comandos_lineares/equalizer-poky/build/tmp-glibc/sysroots/x86_64-linux/usr/bin/node" "/home/prjs/cm_comandos_lineares/equalizer-poky/build/tmp-glibc/sysroots/x86_64-linux/usr/bin/npm" "--arch=arm" "--production" "--no-registry" "install"
+27 error node v6.10.0
+28 error npm  v3.10.10
+29 error registry URL is required
+30 error If you need help, you may report this error at:
+30 error     <https://github.com/npm/npm/issues>
+31 verbose exit [ 1, true ]

@@ -1,6 +1,6 @@
 inherit externalsrc
-EXTERNALSRC = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/nodemailer"
-EXTERNALSRC_BUILD = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/nodemailer"
+EXTERNALSRC = "${THISDIR}/nodemailer"
+EXTERNALSRC_BUILD = "${THISDIR}/nodemailer"
 
 # initial_rev: 4b592c134ff355611698fc7c077d5a0ad3468765
 do_install_append() {

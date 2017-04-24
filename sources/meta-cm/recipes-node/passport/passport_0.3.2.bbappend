@@ -1,6 +1,6 @@
 inherit externalsrc
-EXTERNALSRC = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/passport"
-EXTERNALSRC_BUILD = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/passport"
+EXTERNALSRC = "${THISDIR}/passport"
+EXTERNALSRC_BUILD = "${THISDIR}/passport"
 
 # initial_rev: 08bc060d8ee8e8e735431e5a7b94e86d5faf2bc4
 do_install_append() {

@@ -1,6 +1,6 @@
 inherit externalsrc
-EXTERNALSRC = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/connect-redis"
-EXTERNALSRC_BUILD = "/home/prjs/cm_comandos_lineares/equalizer-poky/build/workspace/sources/connect-redis"
+EXTERNALSRC = "${THISDIR}/connect-redis"
+EXTERNALSRC_BUILD = "${THISDIR}/connect-redis"
 
 # initial_rev: 600cf44015cd4b918e6243f0003fce10795c6fdd
 do_install_append() {
