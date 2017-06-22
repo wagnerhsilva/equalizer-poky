@@ -12,6 +12,9 @@ FILES_${PN} += "/usr/lib/node_modules/sqlite3"
 
 RDEPENDS_${PN} = "bash"
 
+INSANE_SKIP_${PN}-dev += "staticdev"
+INSANE_SKIP_${PN} += "staticdev"
+
 #Do nothing to compile
 do_compile () {
 }
