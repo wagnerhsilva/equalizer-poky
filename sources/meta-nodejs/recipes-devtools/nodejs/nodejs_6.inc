@@ -8,12 +8,13 @@ COMPATIBLE_MACHINE_armv4 = "(!.*armv4).*"
 COMPATIBLE_MACHINE_mips64 = "(!.*mips64).*"
 
 INC_PR = "r1"
-PR = "${INC_PR}.7"
+PR = "${INC_PR}.8"
 
 PROVIDES = "node"
 RPROVIDES_${PN} = "node"
 
-SRC_URI = "https://nodejs.org/dist/v${PV}/node-v${PV}.tar.gz;name=src"
+SRC_URI = "https://nodejs.org/dist/v${PV}/node-v${PV}.tar.gz;name=src \
+           file://no-registry_6.x.patch"
 
 S = "${WORKDIR}/node-v${PV}"
 
@@ -31,7 +32,7 @@ ARCHFLAGS ?= ""
 
 GYP_DEFINES_append_mipsel = " mips_arch_variant='r1' "
 
-PACKAGECONFIG ??= ""
+PACKAGECONFIG ??= "zlib openssl"
 
 PACKAGECONFIG[zlib] = "--shared-zlib,,zlib,"
 PACKAGECONFIG[openssl] = "--shared-openssl,,openssl,"
@@ -47,7 +48,7 @@ do_configure () {
 		--dest-os=linux ${ARCHFLAGS} \
 		--without-snapshot \
 		--with-intl=none \
-		${EXTRA_OECONF}
+		${PACKAGECONFIG_CONFARGS}
 }
 
 do_compile () {

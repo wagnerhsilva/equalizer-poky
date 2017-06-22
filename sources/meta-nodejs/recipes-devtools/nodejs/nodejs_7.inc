@@ -8,12 +8,13 @@ COMPATIBLE_MACHINE_armv4 = "(!.*armv4).*"
 COMPATIBLE_MACHINE_mips64 = "(!.*mips64).*"
 
 INC_PR = "r1"
-PR = "${INC_PR}.1"
+PR = "${INC_PR}.4"
 
 PROVIDES = "node"
 RPROVIDES_${PN} = "node"
 
-SRC_URI = "https://nodejs.org/dist/v${PV}/node-v${PV}.tar.gz;name=src"
+SRC_URI = "https://nodejs.org/dist/v${PV}/node-v${PV}.tar.gz;name=src \
+           file://no-registry_6.x.patch"
 
 S = "${WORKDIR}/node-v${PV}"
 
@@ -29,9 +30,12 @@ ARCHFLAGS_arm = "${@bb.utils.contains('TUNE_FEATURES', 'callconvention-hard', '-
                     '--with-arm-fpu=vfp', d), d), d)}"
 ARCHFLAGS ?= ""
 
+CROSSCONF = "--cross-compiling"
+CROSSCONF_virtclass-native ="--no-cross-compiling"
+
 GYP_DEFINES_append_mipsel = " mips_arch_variant='r1' "
 
-PACKAGECONFIG ??= ""
+PACKAGECONFIG ??= "zlib openssl"
 
 PACKAGECONFIG[zlib] = "--shared-zlib,,zlib,"
 PACKAGECONFIG[openssl] = "--shared-openssl,,openssl,"
@@ -50,7 +54,8 @@ do_configure () {
 		--dest-cpu="${@nodejs_map_dest_cpu(d.getVar('TARGET_ARCH', True), d)}" \
 		--dest-os=linux ${ARCHFLAGS} \
 		--with-intl=none \
-		${EXTRA_OECONF}
+		${CROSSCONF} \
+		${PACKAGECONFIG_CONFARGS}
 }
 
 do_compile () {

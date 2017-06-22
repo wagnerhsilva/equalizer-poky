@@ -1,3 +1,5 @@
 build/*
 downloads/*
 .repo/
+oe-logs
+oe-workdir
