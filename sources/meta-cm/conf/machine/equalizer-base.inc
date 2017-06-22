@@ -152,8 +152,8 @@ IMX_DEFAULT_KERNEL_mx6 = "linux-cm"
 IMX_DEFAULT_KERNEL_mx6ul = "linux-cm"
 PREFERRED_PROVIDER_virtual/kernel ??= "${IMX_DEFAULT_KERNEL}"
 
-SOC_DEFAULT_IMAGE_FSTYPES = "sdcard.gz tar.bz2"
-SOC_DEFAULT_IMAGE_FSTYPES_mxs = "uboot.mxsboot-sdcard sdcard.gz tar.bz2"
+SOC_DEFAULT_IMAGE_FSTYPES = "tar.bz2 ubifs"
+SOC_DEFAULT_IMAGE_FSTYPES_mxs = "tar.bz2 ubifs"
 
 SDCARD_ROOTFS ?= "${DEPLOY_DIR_IMAGE}/${IMAGE_NAME}.rootfs.ext3"
 IMAGE_FSTYPES ?= "${SOC_DEFAULT_IMAGE_FSTYPES}"

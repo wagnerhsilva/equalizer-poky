@@ -4,43 +4,31 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 inherit packagegroup
 
-CONNMAN_PACKAGES="\
-    connman \
-    connman-client \
-    connman-tests \
-    connman-tools \
-"
-
 UTIL_PACKAGES="\
+    nano \
+    i2c-tools \ 
+    minicom \
+    lrzsz \
     curl \
-    less \
-    avahi-daemon \
     tcpdump \
     screen \
-    bridge-utils \
     lsof \
     rsync \
     socat \
-    links \
-    iw \
-    mosh \
-    macchanger \
     netcat-openbsd \
     tzdata \
     bind-utils \
     usbutils \
     ethtool \
     trace-cmd \
-    packagegroup-core-buildessential \
-    openssl-dev \
-    git \
     python-scons \
     boost-dev \
     python-pip \
 "
 
 EQUALIZER_PACKAGES="\
-    nginx \
+    git \
+    packagegroup-core-buildessential \
     sqlite3 \
     nodejs \
     nodejs-npm \
@@ -51,6 +39,7 @@ EQUALIZER_PACKAGES="\
     ejs \
     connect-redis \
     morgan \
+    express \
     express-handlebars \
     express-session \
     passport \
@@ -65,16 +54,29 @@ EQUALIZER_PACKAGES="\
     ip \
     getmac \
     network \
+    resolvconf \
     nodemailer \
     ntp-client \
     setup \
-    sntp \
+    ntp \
+    sntp-node \
     equalizer-serial-service \
+    mime \
+    path \
 "
 
-RDEPENDS_packagegroup-cm-equalizer = "\
-    ${CONNMAN_PACKAGES} \
+NETWORK_PACKAGES = "\
+    networkmanager \
+    modemmanager \
+    uuid \
+    usb-modeswitch \
+    net-tools \
+    mobile-broadband-provider-info \
+"
+
+RDEPENDS_packagegroup-equalizer = "\
     ${UTIL_PACKAGES} \
+    ${NETWORK_PACKAGES} \
     ${EQUALIZER_PACKAGES} \
 "
 
