@@ -61,8 +61,6 @@ EQUALIZER_PACKAGES="\
     ntp \
     sntp-node \
     equalizer-serial-service \
-    mime \
-    path \
 "
 
 NETWORK_PACKAGES = "\
