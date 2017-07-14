@@ -4,6 +4,12 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 inherit packagegroup
 
+SNMP_PACKAGES="\
+    net-snmp-server \
+    net-snmp-libs \
+    net-snmp-mibs \
+"
+
 UTIL_PACKAGES="\
     nano \
     i2c-tools \ 
@@ -75,6 +81,7 @@ NETWORK_PACKAGES = "\
 RDEPENDS_packagegroup-equalizer = "\
     ${UTIL_PACKAGES} \
     ${NETWORK_PACKAGES} \
+    ${SNMP_PACKAGES} \
     ${EQUALIZER_PACKAGES} \
 "
 
