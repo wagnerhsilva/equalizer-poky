@@ -1,4 +1,8 @@
 #!/bin/sh
 cd /var/www/serial_service
-#./service /dev/ttymxc3 1 &
-./service /dev/ttyUSB0 1 &
+if [ -c "/dev/ttyUSB0" ]
+then
+	./service /dev/ttyUSB0 1 &
+else
+	./service /dev/ttymxc3 1 &
+fi
