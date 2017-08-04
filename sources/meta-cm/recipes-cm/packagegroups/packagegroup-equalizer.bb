@@ -67,6 +67,9 @@ EQUALIZER_PACKAGES="\
     ntp \
     sntp-node \
     equalizer-serial-service \
+    snmp-passpersist \
+    equalizer-agent \
+    python-sqlalchemy \
 "
 
 NETWORK_PACKAGES = "\
