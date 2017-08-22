@@ -6,10 +6,6 @@ da CM Comandos Lineares"
 IMAGE_FEATURES += "package-management \
     ssh-server-openssh \
     debug-tweaks \
-    tools-debug \
-    eclipse-debug \
-    tools-sdk \
-    tools-profile \
     "
 
 # Inclusao dos pacotes presentes na imagem. Deve ser preparada uma imagem simples
@@ -22,6 +18,7 @@ IMAGE_INSTALL = "\
     packagegroup-core-full-cmdline \
     packagegroup-equalizer \
     kernel-modules \
+    linux-firmware \
     ${CORE_IMAGE_EXTRA_INSTALL} \
     "
 

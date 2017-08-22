@@ -163,7 +163,7 @@ SERIAL_CONSOLE_mxs = "115200 ttyAMA0"
 
 KERNEL_IMAGETYPE = "zImage"
 
-MACHINE_FEATURES = "usbgadget usbhost vfat touchscreen"
+MACHINE_FEATURES = "usbgadget usbhost vfat touchscreen wifi"
 
 # Add the ability to specify _imx machines
 MACHINEOVERRIDES =. "imx:"

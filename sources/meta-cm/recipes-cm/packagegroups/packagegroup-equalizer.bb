@@ -81,6 +81,8 @@ NETWORK_PACKAGES = "\
     net-tools \
     mobile-broadband-provider-info \
     dhcp-server \
+    wpa-supplicant \
+    wireless-tools \
 "
 
 RDEPENDS_packagegroup-equalizer = "\
