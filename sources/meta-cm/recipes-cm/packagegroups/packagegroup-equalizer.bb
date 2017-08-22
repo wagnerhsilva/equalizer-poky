@@ -64,7 +64,6 @@ EQUALIZER_PACKAGES="\
     nodemailer \
     ntp-client \
     setup \
-    ntp \
     sntp-node \
     equalizer-serial-service \
     snmp-passpersist \
@@ -81,6 +80,7 @@ NETWORK_PACKAGES = "\
     usb-modeswitch \
     net-tools \
     mobile-broadband-provider-info \
+    dhcp-server \
 "
 
 RDEPENDS_packagegroup-equalizer = "\
