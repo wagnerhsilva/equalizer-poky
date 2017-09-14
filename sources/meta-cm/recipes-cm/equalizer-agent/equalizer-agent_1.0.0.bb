@@ -39,4 +39,4 @@ do_install () {
 }
 
 INITSCRIPT_NAME = "equalizer-traps"
-INITSCRIPT_PARAMS = "defaults 95 22"
+INITSCRIPT_PARAMS = ""
