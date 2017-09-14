@@ -17,8 +17,6 @@ FILES_${PN} += "/var/www/equalizer-agent/agent_extension.py \
 		/var/www/equalizer-agent/db_engine.py \
 		/var/www/equalizer-agent/element_mib.json \
 		/var/www/equalizer-agent/trap_sender.py \
-		/var/www/equalizer-agent/config_agent.py \
-		/var/www/equalizer-agent/agent_config.json \
 "
 
 RDEPENDS_${PN} = "python snmp-passpersist bash"
@@ -33,8 +31,6 @@ do_install () {
    install -m 755 ${WORKDIR}/git/db_engine.py ${D}/var/www/equalizer-agent/db_engine.py
    install -m 755 ${WORKDIR}/git/element_mib.json ${D}/var/www/equalizer-agent/element_mib.json
    install -m 755 ${WORKDIR}/git/trap_sender.py ${D}/var/www/equalizer-agent/trap_sender.py
-   install -m 755 ${WORKDIR}/git/config_agent.py ${D}/var/www/equalizer-agent/config_agent.py
-   install -m 755 ${WORKDIR}/git/agent_config.json ${D}/var/www/equalizer-agent/agent_config.json
 
    install -d ${D}${sysconfdir}/init.d
    install -m 0755 ${WORKDIR}/git/equalizer-traps ${D}${sysconfdir}/init.d/equalizer-traps
@@ -43,4 +39,4 @@ do_install () {
 }
 
 INITSCRIPT_NAME = "equalizer-traps"
-INITSCRIPT_PARAMS = "defaults 95 22"
+INITSCRIPT_PARAMS = ""
