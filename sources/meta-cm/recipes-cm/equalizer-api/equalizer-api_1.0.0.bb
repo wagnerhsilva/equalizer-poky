@@ -9,6 +9,7 @@ SRC_URI = " \
             git://git@git.phiinnovations.com/cm_comandos_lineares/equalizer-api.git;protocol=ssh \
             file://equalizer-api.init \
             file://equalizer-api-start \
+            file://delete_logs.sh \
           "
 
 inherit update-rc.d
@@ -29,6 +30,7 @@ do_install () {
    cp -r ${WORKDIR}/git/equalizer-api ${D}/var/www/equalizer-api
    install -m 755 ${WORKDIR}/git/package.json ${D}/var/www/equalizer-api
    install -m 755 ${WORKDIR}/equalizer-api-start ${D}/var/www/equalizer-api
+   install -m 755 ${WORKDIR}/delete_logs.sh ${D}/var/www/equalizer-api
    chown -R root: ${D}/var/www/equalizer-api/equalizer-api
    chmod -R 755 ${D}/var/www/equalizer-api/equalizer-api
    rm -rf ${D}/var/www/equalizer-api/equalizer-api/node_modules
