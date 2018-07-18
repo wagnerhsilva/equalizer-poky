@@ -59,6 +59,7 @@ EQUALIZER_PACKAGES="\
     sqlite3-node \
     ip \
     getmac \
+    ntp \
     network \
     resolvconf \
     nodemailer \
@@ -68,6 +69,7 @@ EQUALIZER_PACKAGES="\
     equalizer-serial-service \
     snmp-passpersist \
     pysnmp \
+    ntpdate \
     pyasn1 \
     equalizer-agent \
     python-sqlalchemy \

@@ -1,7 +1,7 @@
 DESCRIPTION = "Serial service to check sensors in Equalizer"
 
 LICENSE = "PHI"
-LIC_FILES_CHKSUM = "file://README.md;md5=1bef1c3e1e4b520fb67cd19ad5766063"
+LIC_FILES_CHKSUM = "file://README.md;md5=63866e428103ff9d6ed5b6d442ff0595"
 
 SRCBRANCH = "master"
 SRCREV = "master"
