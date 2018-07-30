@@ -22,6 +22,8 @@ IMAGE_INSTALL = "\
     ${CORE_IMAGE_EXTRA_INSTALL} \
     "
 
+IMAGE_INSTALL_append += "servermodbus"
+
 inherit core-image  
   
 # Adicionando espaco extra na imagem Linux gerada
