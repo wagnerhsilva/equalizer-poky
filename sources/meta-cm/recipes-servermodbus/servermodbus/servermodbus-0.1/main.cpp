@@ -102,7 +102,6 @@ void __timed_update(Server_t * Server, CMState * State, CMDatabase * Database){
          * In case there were no updates we need to manually update the values from the Mapping
          * When the update accours the State is automaticly updated
         */
-        std::cout << "Updating Data Values" << std::endl;
         CMDB_fetch_data(Database, State);
     }
     /*
