@@ -31,6 +31,8 @@ do_install () {
    install -m 755 ${WORKDIR}/git/db_engine.py ${D}/var/www/equalizer-agent/db_engine.py
    install -m 755 ${WORKDIR}/git/element_mib.json ${D}/var/www/equalizer-agent/element_mib.json
    install -m 755 ${WORKDIR}/git/trap_sender.py ${D}/var/www/equalizer-agent/trap_sender.py
+   install -m 755 ${WORKDIR}/git/set_v1v2.py ${D}/var/www/equalizer-agent/set_v1v2.py
+   install -m 755 ${WORKDIR}/git/set_v3.py ${D}/var/www/equalizer-agent/set_v3.py
 
    install -d ${D}${sysconfdir}/init.d
    install -m 0755 ${WORKDIR}/git/equalizer-traps ${D}${sysconfdir}/init.d/equalizer-traps
