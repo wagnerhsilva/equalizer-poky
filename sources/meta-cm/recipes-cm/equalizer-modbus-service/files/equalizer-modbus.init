@@ -1,9 +1,9 @@
 #! /bin/sh
 PATH=/sbin:/bin:/usr/sbin:/usr/bin
-DAEMON=/var/www/modbus_service/modbus-start 
-NAME=modbus-server
-DESC=modbus-server
-PID=/var/run/modbus-server.pid
+DAEMON=/var/www/modbus_service/equalizer-modbus-start 
+NAME=equalizer-modbus-service
+DESC=equalizer-modbus
+PID=/var/run/equalizer-modbus.pid
 
 test -x $DAEMON || exit 0
 

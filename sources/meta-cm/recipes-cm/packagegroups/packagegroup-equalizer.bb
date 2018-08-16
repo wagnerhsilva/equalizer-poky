@@ -73,6 +73,7 @@ EQUALIZER_PACKAGES="\
     pyasn1 \
     equalizer-agent \
     python-sqlalchemy \
+    equalizer-modbus-service \
 "
 
 NETWORK_PACKAGES = "\

@@ -1,7 +1,7 @@
 DESCRIPTION = "Modbus service to check sensors in Equalizer"
 
 LICENSE = "PHI"
-LIC_FILES_CHKSUM = "file://README.md;md5=63866e428103ff9d6ed5b6d442ff0595"
+LIC_FILES_CHKSUM = "file://README.md;md5=5f5c7fd5781a681a803a2100cb459c0c"
 
 SRCBRANCH = "master"
 SRCREV = "master"
@@ -24,7 +24,7 @@ do_install () {
    install -d ${D}/var/www/modbus_service
    install -d ${D}/usr/lib
    install -m 755 ${WORKDIR}/git/modbus ${D}/var/www/modbus_service
-   install -m 755 ${WORKDIR}/libmodbus.so.5 ${D}/usr/lib
+   install -m 755 ${WORKDIR}/git/libmodbus.so.5 ${D}/usr/lib
    install -m 755 ${WORKDIR}/equalizer-modbus-start ${D}/var/www/modbus_service
 
    install -d ${D}${sysconfdir}/init.d
