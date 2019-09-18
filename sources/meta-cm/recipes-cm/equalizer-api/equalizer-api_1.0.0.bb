@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://README.md;md5=5cb046c0bbff9e6ce8ad92849c680912"
 SRCBRANCH = "master"
 SRCREV = "master"
 SRC_URI = " \
-            git://git@git.phiinnovations.com/cm_comandos_lineares/equalizer-api.git;protocol=ssh \
+            git://git@github.com/wagnerhsilva/equalizer-api.git;protocol=ssh \
             file://equalizer-api.init \
             file://equalizer-api-start \
             file://delete_logs.sh \

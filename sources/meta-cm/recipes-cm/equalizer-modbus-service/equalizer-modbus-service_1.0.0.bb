@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://README.md;md5=5f5c7fd5781a681a803a2100cb459c0c"
 SRCBRANCH = "master"
 SRCREV = "master"
 SRC_URI = " \
-            git://git@git.phiinnovations.com/cm_comandos_lineares/equalizer-modbus-service.git;protocol=ssh \
+            git://git@github.com/wagnerhsilva/equalizer-modbus-service.git;protocol=ssh \
             file://equalizer-modbus.init \
             file://equalizer-modbus-start \
           "

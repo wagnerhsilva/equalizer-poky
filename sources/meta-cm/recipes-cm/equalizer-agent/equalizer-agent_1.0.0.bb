@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://README.md;md5=c8053a644b1ef0a2ad79faf62716dfdd"
 SRCBRANCH = "master"
 SRCREV = "master"
 SRC_URI = " \
-            git://git@git.phiinnovations.com/cm_comandos_lineares/equalizer-agent.git;protocol=ssh \
+            git://git@github.com/wagnerhsilva/equalizer-agent.git;protocol=ssh \
           "
 S = "${WORKDIR}/git"
 

@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://README.md;md5=63866e428103ff9d6ed5b6d442ff0595"
 SRCBRANCH = "master"
 SRCREV = "master"
 SRC_URI = " \
-            git://git@git.phiinnovations.com/cm_comandos_lineares/equalizer-serial-service.git;protocol=ssh \
+            git://git@github.com/wagnerhsilva/equalizer-serial-service.git;protocol=ssh \
             file://equalizer-serial.init \
             file://equalizer-serial-start \
           "
