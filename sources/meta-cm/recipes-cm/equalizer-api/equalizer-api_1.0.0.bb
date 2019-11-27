@@ -1,7 +1,7 @@
 DESCRIPTION = "Web application used in Equalizer"
 
 LICENSE = "PHI"
-LIC_FILES_CHKSUM = "file://README.md;md5=5cb046c0bbff9e6ce8ad92849c680912"
+LIC_FILES_CHKSUM = "file://README.md;md5=8b2c37dddc68eb038d318eb62f4b9e69"
 
 SRCBRANCH = "master"
 SRCREV = "master"
