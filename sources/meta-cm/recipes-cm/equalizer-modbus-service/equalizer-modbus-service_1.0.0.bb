@@ -34,4 +34,4 @@ do_install () {
 }
 
 INITSCRIPT_NAME = "equalizer-modbus"
-INITSCRIPT_PARAMS = "defaults 94 22"
+INITSCRIPT_PARAMS = "defaults 93 21"
